@@ -13,6 +13,7 @@ namespace ContactManager.Models
         public string? City { get; set; }
         public string? State { get; set; }
         public string? Zip { get; set; }
+        public string? Mobile { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required]
         public string? Email { get; set; }

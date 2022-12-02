@@ -99,6 +99,7 @@ namespace ContactManager.Data
                     City = "Redmond",
                     State = "WA",
                     Zip = "10999",
+                    Mobile = "99999999",
                     Email = "debra@example.com",
                     Status = ContactStatus.Approved,
                     OwnerID = adminID
@@ -110,6 +111,7 @@ namespace ContactManager.Data
                     City = "Redmond",
                     State = "WA",
                     Zip = "10999",
+                    Mobile = "99999999",
                     Email = "thorsten@example.com",
                     Status = ContactStatus.Approved,
                     OwnerID = adminID
@@ -121,6 +123,7 @@ namespace ContactManager.Data
                     City = "Redmond",
                     State = "WA",
                     Zip = "10999",
+                    Mobile = "99999999",
                     Email = "yuhong@example.com",
                     Status = ContactStatus.Approved,
                     OwnerID = adminID
@@ -132,6 +135,7 @@ namespace ContactManager.Data
                     City = "Redmond",
                     State = "WA",
                     Zip = "10999",
+                    Mobile = "99999999",
                     Email = "jon@example.com",
                     Status = ContactStatus.Submitted,
                     OwnerID = adminID
@@ -143,6 +147,7 @@ namespace ContactManager.Data
                     City = "Redmond",
                     State = "WA",
                     Zip = "10999",
+                    Mobile = "99999999",
                     Email = "diliana@example.com",
                     Status = ContactStatus.Submitted,
                     OwnerID = adminID
