@@ -1,0 +1,63 @@
+@page
+@model ContactManager.Pages.Contacts.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Create</h1>
+
+<h4 class="text-center">Contact</h4>
+<div class="d-flex justify-content-center">
+<div class="card col-md-4">
+    <div class="card-body">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Contact.Name" class="control-label"></label>
+                <input asp-for="Contact.Name" class="form-control" />
+                <span asp-validation-for="Contact.Name" class="text-danger"></span>
+            </div>
+                <div class="form-group mt-1">
+                <label asp-for="Contact.Address" class="control-label"></label>
+                    <input asp-for="Contact.Address" class="form-control" />
+                <span asp-validation-for="Contact.Address" class="text-danger"></span>
+            </div>
+                <div class="form-group mt-1">
+                <label asp-for="Contact.City" class="control-label"></label>
+                <input asp-for="Contact.City" class="form-control" />
+                <span asp-validation-for="Contact.City" class="text-danger"></span>
+            </div>
+                <div class="form-group mt-1">
+                <label asp-for="Contact.State" class="control-label"></label>
+                <input asp-for="Contact.State" class="form-control" />
+                <span asp-validation-for="Contact.State" class="text-danger"></span>
+            </div>
+                <div class="form-group mt-1">
+                <label asp-for="Contact.Zip" class="control-label"></label>
+                <input asp-for="Contact.Zip" class="form-control" />
+                <span asp-validation-for="Contact.Zip" class="text-danger"></span>
+            </div>
+                <div class="form-group mt-1">
+                <label asp-for="Contact.Email" class="control-label"></label>
+                    <input asp-for="Contact.Email" class="form-control" />
+                <span asp-validation-for="Contact.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center mt-4">
+                <input type="submit" value="Create" class="btn btn-success w-100" />
+            </div>
+
+                <div class="text-center">
+                    <a asp-page="Index" class="btn btn-secondary w-100 mt-2">Back to List</a>
+                </div>
+
+        </form>
+</div>
+</div>
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="px-4 py-5 my-5 text-center">
+    <i class="bi bi-person-lines-fill fs-1 text-danger"></i>
+    <h1 class="display-5 fw-bold  text-danger">Welcome</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Contacts Manager application</p>
+      <p>
+          ASP.NET Core web app with user data protected by authorization. It displays a list of contacts that authenticated (registered) users have created.
+           Registered users can view all the approved data and can edit/delete their own data.
+            Managers can approve or reject contact data. Only approved contacts are visible to users.
+            Administrators can approve/reject and edit/delete any data.
+        </p>
+      
+    </div>
+  </div>
